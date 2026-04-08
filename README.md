@@ -1,2 +1,2 @@
-# Tim-Tian-Konglomerat
-Pengerjaan Repository Dengan Kelompok
+# TIM-TIAN-KONGLOMERAT.
+PENGERJAAN TUGAS CODING BERSAMA KELOMPOK

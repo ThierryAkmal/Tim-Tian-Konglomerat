@@ -1,1 +1,106 @@
+/* style.css - Perbaikan untuk Tim-Tian-Konglomerat */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    /* Menambahkan antialiasing agar font lebih halus di MacOS/iOS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3c5c, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 2rem 1.5rem; /* Menambah sedikit ruang napas */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: -0.02em;
+}
+
+nav {
+    background-color: #0f172a;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem; /* Gap sedikit diperlebar */
+    padding: 1rem;
+    position: sticky; /* Agar navigasi tetap di atas saat scroll */
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px); /* Efek angkat sedikit */
+}
+
+/* Tabel Presensi - Perbaikan Border Radius */
+.attendance-table {
+    width: 100%;
+    border-collapse: separate; /* Penting untuk border-radius */
+    border-spacing: 0;
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin: 1rem 0;
+}
+
+.attendance-table th {
+    background-color: #1e3c5c;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+.attendance-table th, 
+.attendance-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Menghilangkan border bawah pada baris terakhir agar tidak merusak lengkungan */
+.attendance-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Galeri - Perbaikan Aspect Ratio */
+.gallery-item img {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Mengunci rasio gambar agar seragam */
+    object-fit: cover;
+    display: block;
+}
+
+/* Footer - Perbaikan kontras */
+footer {
+    background-color: #0f172a;
+    color: #cbd5e1; /* Warna teks dibuat sedikit lebih terang agar mudah dibaca */
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+}
